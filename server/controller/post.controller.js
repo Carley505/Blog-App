@@ -52,7 +52,7 @@ export const updatePost = async(req, res, next) =>{
                     title,
                     content,
                     author,
-                    tags,
+                    genres,
                 }
             },
             { new: true }

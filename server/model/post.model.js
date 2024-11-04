@@ -6,7 +6,10 @@ const postSchema = new Schema({
     title: { type: String, required: true },
     content: { type: String, required: true },
     author: { type: String, required: true },
-    tags: { type: [String] },
+    genres: { 
+              type: [String], 
+              enum: ['all', 'adventure', 'history', 'biography', 'action', 'fantsy'],
+             },
     createdAt: { type: Date, default: Date.now }
 });
 
